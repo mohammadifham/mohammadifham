@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammad Ifham | GitHub Profile Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #060b14;
+        --panel: rgba(14, 21, 35, 0.72);
+        --panel-border: rgba(143, 186, 255, 0.14);
+        --text: #ebf4ff;
+        --muted: #8ea3bf;
+        --cyan: #00e5ff;
+        --violet: #a855f7;
+        --green: #19ff8c;
+        --blue: #4ea1ff;
+        --gold: #f4c542;
+        --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: "Space Grotesk", system-ui, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(0, 229, 255, 0.18), transparent 24%),
+          radial-gradient(circle at top right, rgba(168, 85, 247, 0.22), transparent 28%),
+          radial-gradient(circle at bottom center, rgba(25, 255, 140, 0.1), transparent 24%),
+          linear-gradient(180deg, #09111e 0%, #050810 100%);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background-image:
+          radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px),
+          radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+        background-position: 0 0, 28px 28px;
+        background-size: 56px 56px;
+        mask-image: linear-gradient(180deg, rgba(0,0,0,0.75), transparent 80%);
+        opacity: 0.55;
+      }
+
+      .wrap {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 56px;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0 22px;
+        color: var(--muted);
+        font-family: "JetBrains Mono", monospace;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+      }
+
+      .badge {
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, rgba(0, 229, 255, 0.14), rgba(168, 85, 247, 0.16));
+        border: 1px solid var(--panel-border);
+        color: var(--text);
+      }
+
+      .hero {
+        text-align: center;
+        padding: 50px 20px 34px;
+      }
+
+      .name {
+        margin: 0;
+        font-size: clamp(3rem, 8vw, 6.5rem);
+        line-height: 0.95;
+        letter-spacing: -0.06em;
+        text-transform: uppercase;
+        background: linear-gradient(90deg, #7cf7ff 0%, #00d4ff 38%, #f2fbff 52%, #8ff3ff 70%, #6cd5ff 100%);
+        background-size: 220% auto;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 28px rgba(0, 229, 255, 0.18);
+        animation: nameShimmer 4.2s linear infinite, floatName 3.6s ease-in-out infinite;
+      }
+
+      .role {
+        margin: 18px auto 0;
+        width: min(1240px, 100%);
+        overflow: hidden;
+        white-space: nowrap;
+        border-radius: 10px;
+        mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+      }
+
+      .role-track {
+        display: inline-flex;
+        gap: 44px;
+        min-width: max-content;
+        font-size: clamp(1rem, 2vw, 1.35rem);
+        color: #ef5cff;
+        font-family: "JetBrains Mono", monospace;
+        letter-spacing: 0.12em;
+        animation: roleMarquee 18s linear infinite;
+      }
+
+      .line {
+        width: min(760px, 100%);
+        height: 2px;
+        margin: 30px auto 0;
+        background: linear-gradient(90deg, var(--cyan), var(--violet));
+        background-size: 220% auto;
+        border-radius: 999px;
+        box-shadow: 0 0 16px rgba(0, 229, 255, 0.35);
+        animation: lineFlow 3.2s linear infinite;
+      }
+
+      @keyframes nameShimmer {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 200% 50%; }
+      }
+
+      @keyframes floatName {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+
+      @keyframes rolePulse {
+        0%, 100% { text-shadow: 0 0 10px rgba(239, 92, 255, 0.1); }
+        50% { text-shadow: 0 0 18px rgba(239, 92, 255, 0.55); }
+      }
+
+      @keyframes roleMarquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+
+      @keyframes lineFlow {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 200% 50%; }
+      }
+
+      .section {
+        margin-top: 44px;
+      }
+
+      .section h2 {
+        margin: 0 0 18px;
+        font-size: clamp(1.7rem, 3vw, 2.4rem);
+        letter-spacing: -0.03em;
+      }
+
+      .section h2 span {
+        color: #72a7ff;
+      }
+
+      .subhead {
+        font-family: "JetBrains Mono", monospace;
+        color: var(--cyan);
+        margin: 0 0 16px;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+      }
+
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--panel-border);
+        border-radius: 26px;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(20px);
+      }
+
+      .intro {
+        padding: 24px;
+      }
+
+      .intro-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 18px;
+      }
+
+      .intro-card {
+        padding: 18px 20px;
+        border-radius: 18px;
+        background: linear-gradient(180deg, rgba(13, 19, 31, 0.88), rgba(10, 15, 24, 0.94));
+        border: 1px solid rgba(255,255,255,0.06);
+      }
+
+      .intro-card h3 {
+        margin: 0 0 8px;
+        font-size: 1.15rem;
+      }
+
+      .intro-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .yaml {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.93rem;
+        color: #dbe9ff;
+        line-height: 1.65;
+        white-space: pre-wrap;
+      }
+
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .stack-card {
+        padding: 20px;
+        min-height: 170px;
+      }
+
+      .stack-card h3 {
+        margin: 0 0 14px;
+        font-size: 1.1rem;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .chip {
+        padding: 9px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(255,255,255,0.08);
+        background: rgba(255,255,255,0.04);
+        color: #d9e5f7;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.85rem;
+      }
+
+      .accent-cyan { box-shadow: inset 0 2px 0 rgba(0, 229, 255, 0.65); }
+      .accent-violet { box-shadow: inset 0 2px 0 rgba(168, 85, 247, 0.7); }
+      .accent-green { box-shadow: inset 0 2px 0 rgba(25, 255, 140, 0.65); }
+      .accent-blue { box-shadow: inset 0 2px 0 rgba(78, 161, 255, 0.65); }
+      .accent-gold { box-shadow: inset 0 2px 0 rgba(244, 197, 66, 0.75); }
+
+      .about {
+        padding: 22px;
+      }
+
+      .about-table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
+      }
+
+      .about-table td {
+        padding: 14px 10px;
+        vertical-align: top;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+      }
+
+      .about-table td:first-child {
+        width: 180px;
+        color: #8ddcff;
+        font-family: "JetBrains Mono", monospace;
+      }
+
+      .projects {
+        padding: 22px;
+      }
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .project {
+        padding: 18px;
+        border-radius: 18px;
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.07);
+      }
+
+      .project h3 {
+        margin: 0 0 10px;
+      }
+
+      .project p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .project-actions {
+        margin-top: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .project-btn {
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 10px;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.78rem;
+        font-weight: 700;
+        border: 1px solid rgba(255,255,255,0.14);
+      }
+
+      .project-btn.repo {
+        color: #e8f1ff;
+        background: rgba(13, 17, 23, 0.85);
+      }
+
+      .project-btn.live {
+        color: #041225;
+        background: linear-gradient(90deg, #00d3ff, #6ea8ff);
+        border-color: transparent;
+      }
+
+      .achievements {
+        padding: 22px;
+      }
+
+      .achievement-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+        align-items: stretch;
+      }
+
+      .achievement-card {
+        padding: 16px;
+        border-radius: 24px;
+        background: linear-gradient(180deg, rgba(12, 20, 34, 0.7), rgba(10, 14, 25, 0.76));
+        border: 1px solid rgba(255,255,255,0.12);
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .achievement-icon {
+        font-size: 1.8rem;
+        color: var(--gold);
+      }
+
+      .achievement-card h3 {
+        margin: 10px 0 10px;
+        font-size: 1.05rem;
+      }
+
+      .achievement-tag {
+        color: #3e93ff;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .achievement-desc {
+        color: var(--muted);
+        line-height: 1.6;
+        margin: 0;
+        overflow: auto;
+        padding-right: 4px;
+      }
+
+      .stats {
+        display: grid;
+        gap: 14px;
+      }
+
+      .stats-box {
+        padding: 18px;
+        border-radius: 18px;
+        background: rgba(255,255,255,0.035);
+        border: 1px solid rgba(255,255,255,0.08);
+        color: var(--muted);
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+      }
+
+      .connect-note {
+        margin: 6px 0 16px;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .stats-box img {
+        width: 100%;
+        display: block;
+        border-radius: 14px;
+      }
+
+      .link-btn {
+        text-decoration: none;
+        color: #08131f;
+        font-weight: 700;
+        padding: 12px 18px;
+        border-radius: 12px;
+        min-width: 138px;
+        text-align: center;
+        box-shadow: 0 14px 35px rgba(0,0,0,0.3);
+      }
+
+      .linkedin { background: #00d9ff; }
+      .email { background: #a100ff; color: #fff; }
+      .github { background: #20ff6b; }
+      .portfolio { background: #00b894; color: #fff; }
+      .hf { background: #ffd21e; }
+
+      .footer {
+        text-align: center;
+        margin-top: 40px;
+        padding: 24px 16px 8px;
+        color: #b8c7dd;
+        font-family: "JetBrains Mono", monospace;
+      }
+
+      .footer .quote {
+        display: inline-block;
+        margin-bottom: 12px;
+        color: #8fff67;
+      }
+
+      @media (max-width: 900px) {
+        .intro-grid, .grid-3, .project-grid { grid-template-columns: 1fr; }
+        .achievement-grid { grid-template-columns: 1fr; }
+        .about-table td { display: block; width: 100%; }
+        .about-table tr { display: block; margin-bottom: 12px; }
+        .about-table td:first-child { padding-bottom: 4px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <div class="topbar">
+        <div>mohammadifham / README.md</div>
+        <div class="badge">LOCAL PREVIEW</div>
+      </div>
+
+      <section class="hero">
+        <h1 class="name">MOHAMMAD IFHAM</h1>
+        <div class="role" aria-label="running role text">
+          <div class="role-track">
+            <span>Full-Stack Developer | Software Engineer | AI/ML Engineer</span>
+            <span>Full-Stack Developer | Software Engineer | AI/ML Engineer</span>
+          </div>
+        </div>
+        <div class="line"></div>
+      </section>
+
+      <section class="section panel intro">
+        <p class="subhead">SYSTEM.INITIALIZE()</p>
+        <div class="intro-grid">
+          <div class="intro-card">
+            <h3>Profile</h3>
+            <p>
+              Final-year Computer Science Engineering student with a strong foundation in Data Structures and Algorithms.
+              I build scalable, user-focused Android, iOS, and web applications, along with innovative projects in AI/ML,
+              Generative AI, and Blockchain.
+            </p>
+          </div>
+          <div class="intro-card yaml">name: Mohammad Ifham
+role: Full-Stack Developer | Software Engineer | AI/ML Engineer
+status: Building scalable AI/ML, Web, and Android solutions
+education: Final-year Computer Science Engineering student
+focus:
+  - Full-Stack Development
+  - AI/ML and Generative AI
+  - Blockchain and Web3
+  - Mobile and Web Applications</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>My <span>Skills</span></h2>
+        <p class="subhead">TECH.ARSENAL[]</p>
+        <div class="grid-3">
+          <div class="panel stack-card accent-cyan">
+            <h3>Frontend</h3>
+            <div class="chips">
+              <span class="chip">React.js</span><span class="chip">Next.js</span><span class="chip">HTML</span>
+              <span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="panel stack-card accent-green">
+            <h3>Backend & Databases</h3>
+            <div class="chips">
+              <span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">REST APIs</span>
+              <span class="chip">MongoDB</span><span class="chip">PostgreSQL</span><span class="chip">SQL</span>
+            </div>
+          </div>
+          <div class="panel stack-card accent-violet">
+            <h3>Programming Languages</h3>
+            <div class="chips">
+              <span class="chip">Java</span><span class="chip">Python</span><span class="chip">JavaScript</span>
+              <span class="chip">C</span><span class="chip">C++</span><span class="chip">TypeScript</span>
+            </div>
+          </div>
+          <div class="panel stack-card accent-gold">
+            <h3>AI / ML & Generative AI</h3>
+            <div class="chips">
+              <span class="chip">NumPy</span><span class="chip">Pandas</span><span class="chip">TensorFlow</span>
+              <span class="chip">PyTorch</span><span class="chip">LLMs</span><span class="chip">RAG</span>
+            </div>
+          </div>
+          <div class="panel stack-card accent-blue">
+            <h3>Mobile Development</h3>
+            <div class="chips">
+              <span class="chip">React Native</span><span class="chip">Android</span><span class="chip">Flutter</span>
+              <span class="chip">iOS</span>
+            </div>
+          </div>
+          <div class="panel stack-card accent-cyan">
+            <h3>Tools & Platforms</h3>
+            <div class="chips">
+              <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Linux</span>
+              <span class="chip">Docker</span><span class="chip">Hugging Face</span><span class="chip">Web3</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section panel about">
+        <h2>About <span>Me</span></h2>
+        <table class="about-table">
+          <tr>
+            <td><strong>Current focus</strong></td>
+            <td>Building scalable AI-powered systems, full-stack web platforms, and real-world impactful products.</td>
+          </tr>
+          <tr>
+            <td><strong>What I enjoy</strong></td>
+            <td>Solving complex problems, designing efficient system architectures, and turning ideas into production-ready solutions.</td>
+          </tr>
+          <tr>
+            <td><strong>Open to</strong></td>
+            <td>Internships, AI/ML roles, full-stack development opportunities, hackathons, and impactful collaborations.</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>My <span>Projects</span></h2>
+        <p class="subhead">PROJECTS.SHOWCASE[]</p>
+        <div class="panel projects">
+          <div class="project-grid">
+            <div class="project">
+              <h3>VIKRANT 2026 - Tech Fest Platform</h3>
+              <p>A full-stack event platform with registrations, schedules, and real-time updates for a seamless experience.</p>
+              <div class="project-actions">
+                <a class="project-btn repo" href="https://github.com/OSCode-SaIT-Chapter/Tech-Fest-Website" target="_blank" rel="noreferrer">GitHub Repo</a>
+                <a class="project-btn live" href="https://vikranttechfest2026.vercel.app/" target="_blank" rel="noreferrer">Live Demo</a>
+              </div>
+            </div>
+            <div class="project">
+              <h3>MentorVerse - Multi-Agent AI Learning Platform</h3>
+              <p>An AI-learning ecosystem with intelligent agents, personalized feedback, and adaptive learning workflows.</p>
+              <div class="project-actions">
+                <a class="project-btn repo" href="https://github.com/mohammadifham/MentorVerse" target="_blank" rel="noreferrer">GitHub Repo</a>
+                <a class="project-btn live" href="https://mentor-verse-six.vercel.app/" target="_blank" rel="noreferrer">Live Demo</a>
+              </div>
+            </div>
+            <div class="project">
+              <h3>PixelGenesis - Decentralized Identity Platform</h3>
+              <p>A blockchain-powered identity solution focused on secure verification and privacy-first user control.</p>
+              <div class="project-actions">
+                <a class="project-btn repo" href="https://github.com/mohammadifham/pixelgenesis-platform" target="_blank" rel="noreferrer">GitHub Repo</a>
+                <a class="project-btn live" href="https://pixelgenesis.onrender.com/" target="_blank" rel="noreferrer">Live Demo</a>
+              </div>
+            </div>
+            <div class="project">
+              <h3>Agent Management System</h3>
+              <p>A structured coordination platform for managing multiple agents, workflows, and operational tasks.</p>
+              <div class="project-actions">
+                <a class="project-btn repo" href="https://github.com/mohammadifham/AgentManagerFE" target="_blank" rel="noreferrer">Frontend Repo</a>
+                <a class="project-btn repo" href="https://github.com/mohammadifham/AgentManagerBE" target="_blank" rel="noreferrer">Backend Repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Major <span>Achievements</span></h2>
+        <p class="subhead">ACHIEVEMENTS.LOG[]</p>
+        <div class="panel achievements">
+          <div class="achievement-grid">
+            <article class="achievement-card">
+              <div class="achievement-icon">🏆</div>
+              <h3>Technical Team Lead</h3>
+              <div class="achievement-tag">OSCode SaIT Chapter • Present</div>
+              <p class="achievement-desc">As the Tech Team Lead of OSCode SaIT Chapter, I am responsible for ensuring the core tech backbone of the chapter stays strong and scalable. I lead the development, maintenance, and enhancement of our website and digital platforms, provide core tech support, and ensure smooth execution of projects, hackathons, tech events, tech talks, and workshops.</p>
+            </article>
+            <article class="achievement-card">
+              <div class="achievement-icon">🏆</div>
+              <h3>Cardano Asia 2025 Hackathon</h3>
+              <div class="achievement-tag">Grand Finalist • 2025</div>
+              <p class="achievement-desc">Top global contender in the blockchain track.</p>
+            </article>
+            <article class="achievement-card">
+              <div class="achievement-icon">🏆</div>
+              <h3>Smart India Hackathon (SIH)</h3>
+              <div class="achievement-tag">Shortlisted • 2024</div>
+              <p class="achievement-desc">Recognized among top national submissions.</p>
+            </article>
+            <article class="achievement-card">
+              <div class="achievement-icon">🏆</div>
+              <h3>EY Techathon 6.0</h3>
+              <div class="achievement-tag">Executive Summary Round • 2025</div>
+              <p class="achievement-desc">Advanced participant in business and tech synergy.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section panel about">
+        <h2>Connect <span>Network</span></h2>
+        <p class="subhead">CONNECT.NETWORK[]</p>
+        <p class="connect-note">Open to internships, collaboration, and product-building opportunities.</p>
+        <div class="links">
+          <a class="link-btn linkedin" href="https://www.linkedin.com/in/mohammad-ifham-gulzar-028b76235/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="link-btn email" href="mailto:mohammadifhaam69@gmail.com">Email</a>
+          <a class="link-btn github" href="https://github.com/mohammadifham" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="link-btn portfolio" href="https://www.mohammadifham.dev/" target="_blank" rel="noreferrer">Portfolio</a>
+          <a class="link-btn hf" href="https://huggingface.co/ifham69" target="_blank" rel="noreferrer">Hugging Face</a>
+        </div>
+        <div class="footer">
+          <div class="quote">"Building scalable AI/ML systems, LLM-powered applications, and modern web & Android platforms."</div>
+          <div>Crafted with passion by Mohammad Ifham</div>
+        </div>
+      </section>
+
+      <section class="section panel about">
+        <h2>Contribution <span>Activity</span></h2>
+        <p class="subhead">CONTRIBUTION.ACTIVITY[]</p>
+        <div class="stats">
+          <div class="stats-box">
+            <img src="https://github-readme-activity-graph.vercel.app/graph?username=mohammadifham&theme=tokyo-night&hide_border=true&area=true" alt="Contribution Graph" />
+          </div>
+          <div class="stats-box">
+            <img src="https://ghchart.rshah.org/00d9ff/mohammadifham" alt="GitHub Contribution Calendar" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

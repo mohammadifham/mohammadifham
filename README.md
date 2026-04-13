@@ -187,6 +187,9 @@ Open to internships, collaboration, and product-building opportunities.
 <a href="https://github.com/mohammadifham">
   <img src="https://img.shields.io/badge/GitHub-20FF6B?style=for-the-badge&logo=github&logoColor=black" />
 </a>
+<a href="https://www.mohammadifham.dev/">
+  <img src="https://img.shields.io/badge/Portfolio-00B894?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio Website" />
+</a>
 <a href="https://huggingface.co/ifham69">
   <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
 </a>
