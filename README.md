@@ -1,10 +1,15 @@
 <div align="center">
 
-# Mohammad Ifham
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=170&color=0:00d9ff,35:007cf0,100:a855f7&text=Mohammad%20Ifham&fontAlignY=35&fontSize=52&fontColor=ffffff" alt="header" />
 
-<marquee behavior="scroll" direction="left" scrollamount="10">
-  Full-Stack Developer | Software Engineer | AI/ML Engineer • Full-Stack Developer | Software Engineer | AI/ML Engineer
-</marquee>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=30&duration=2200&pause=700&center=true&vCenter=true&width=1100&color=E65CFF&lines=Full-Stack+Developer+%7C+Software+Engineer+%7C+AI%2FML+Engineer" alt="roles" />
+
+<br/>
+
+<img src="https://img.shields.io/badge/AI%2FML-00D9FF?style=for-the-badge&logo=tensorflow&logoColor=white" alt="ai ml" />
+<img src="https://img.shields.io/badge/Full--Stack-2F80ED?style=for-the-badge&logo=javascript&logoColor=white" alt="full stack" />
+<img src="https://img.shields.io/badge/Web3-A855F7?style=for-the-badge&logo=ethereum&logoColor=white" alt="web3" />
+<img src="https://img.shields.io/badge/Open%20to-Internships%20%26%20Collaborations-14b8a6?style=for-the-badge" alt="open to opportunities" />
 
 </div>
 
