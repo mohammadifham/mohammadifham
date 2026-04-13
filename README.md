@@ -46,19 +46,19 @@ focus:
 ### Languages
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,python,cpp,javascript,typescript,sql" />
+  <img width="560" src="https://skillicons.dev/icons?i=java,python,cpp,javascript,typescript,sql&perline=6" alt="Languages" />
 </p>
 
 ### Frameworks & Libraries
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,tailwind,flutter" />
+  <img width="560" src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,tailwind,flutter&perline=6" alt="Frameworks and Libraries" />
 </p>
 
 ### AI, Data & Tools
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,mongodb,postgres,docker,git,github" />
+  <img width="560" src="https://skillicons.dev/icons?i=tensorflow,pytorch,mongodb,postgres,docker,git,github&perline=4" alt="AI Data and Tools" />
 </p>
 
 ---
