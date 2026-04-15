@@ -2,7 +2,7 @@
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=170&color=0:00d9ff,35:007cf0,100:a855f7&text=Mohammad%20Ifham&fontAlignY=35&fontSize=52&fontColor=ffffff" alt="header" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=30&duration=2200&pause=700&center=true&vCenter=true&width=1100&color=E65CFF&lines=Full-Stack+Developer+%7C+Software+Engineer+%7C+AI%2FML+Engineer" alt="roles" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=30&duration=2200&pause=700&center=true&vCenter=true&width=1100&color=20FF6B&lines=Full-Stack+Developer+%7C+Software+Engineer+%7C+AI%2FML+Engineer" alt="roles" />
 
 <br/>
 
