@@ -14,7 +14,7 @@
 </div>
 
 <p align="center">
-  Final-year Computer Science Engineering Graduate with a strong foundation in Data Structures and Algorithms.
+   Computer Science Engineering Graduate with a strong foundation in Data Structures and Algorithms.
   I build scalable, user-focused Android, iOS, and web applications, along with innovative projects in AI/ML,
   Generative AI, and Blockchain.
 </p>
