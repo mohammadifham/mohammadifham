@@ -31,7 +31,7 @@
 name: Mohammad Ifham
 role: Full-Stack Developer | Software Engineer | AI/ML Engineer
 status: Building scalable AI/ML, Web, and Android solutions with real-world impact
-education: Final-year Computer Science Engineering student
+education: Computer Science Engineering Graduate
 focus:
   - Full-Stack Development
   - AI/ML and Generative AI
