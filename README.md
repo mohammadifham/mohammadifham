@@ -3,19 +3,19 @@
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=170&color=0:00d9ff,35:007cf0,100:a855f7&text=Mohammad%20Ifham&fontAlignY=35&fontSize=52&fontColor=ffffff" alt="header" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=30&duration=2200&pause=700&center=true&vCenter=true&width=1100&color=20FF6B&lines=Full-Stack+Developer+%7C+Software+Engineer+%7C+AI%2FML+Engineer" alt="roles" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=30&duration=2200&pause=700&center=true&vCenter=true&width=1100&color=20FF6B&lines=Founder+%26+CEO+%40+NexBuildOn+Community;Full-Stack+Developer+%7C+Software+Engineer+%7C+AI%2FML+Engineer" alt="roles" />
 
 <br/>
 
 <img src="https://img.shields.io/badge/AI%2FML-00D9FF?style=for-the-badge&logo=tensorflow&logoColor=white" alt="ai ml" />
 <img src="https://img.shields.io/badge/Full--Stack-2F80ED?style=for-the-badge&logo=javascript&logoColor=white" alt="full stack" />
 <img src="https://img.shields.io/badge/Web3-A855F7?style=for-the-badge&logo=ethereum&logoColor=white" alt="web3" />
-<img src="https://img.shields.io/badge/Open%20to-Collaborations-14b8a6?style=for-the-badge" alt="collaborations" />
+<img src="https://img.shields.io/badge/Open%20to-Internships%20%26%20Collaborations-14b8a6?style=for-the-badge" alt="open to opportunities" />
 
 </div>
 
 <p align="center">
-   Computer Science & Engineering Graduate from Sambhram Institute of Technology with a strong foundation in Data Structures and Algorithms.
+   Computer Science Engineering Graduate with a strong foundation in Data Structures and Algorithms.
   I build scalable, user-focused Android, iOS, and web applications, along with innovative projects in AI/ML,
   Generative AI, and Blockchain.
 </p>
@@ -32,14 +32,12 @@
 name: Mohammad Ifham
 role: Founder & CEO @ NexBuildOn Community | Full-Stack Developer | Software Engineer | AI/ML Engineer
 status: Building scalable AI/ML, Web, and Android solutions with real-world impact
-education: Computer Science & Engineering Graduate, Sambhram Institute of Technology (2026)
+education: Computer Science & Engineering Graduate
 focus:
   - Full-Stack Development
   - AI/ML and Generative AI
-  - Large Language Models (LLMs) and RAG
   - Blockchain and Web3
   - Mobile and Web Applications
-  - Technology Leadership
 ```
 
 ---
@@ -71,7 +69,7 @@ focus:
 <table>
   <tr>
     <td><strong>Current role</strong></td>
-    <td>Founder & CEO of NexBuildOn Community, leading the organisation's vision, strategy, growth, technology initiatives, products, platforms, and digital infrastructure.</td>
+    <td>Founder & CEO at NexBuildOn Community, leading the organisation's vision, strategy, growth, technology, products, platforms, and digital infrastructure.</td>
   </tr>
   <tr>
     <td><strong>Current focus</strong></td>
@@ -83,7 +81,7 @@ focus:
   </tr>
   <tr>
     <td><strong>Open to</strong></td>
-    <td>Hackathons, leadership opportunities, impactful tech collaborations, and product-building opportunities.</td>
+    <td>Hackathons, leadership opportunities, and impactful tech collaborations.</td>
   </tr>
 </table>
 
@@ -144,12 +142,12 @@ focus:
 
 <table>
   <tr>
-    <td>🚀 <strong>Founder & CEO</strong></td>
-    <td>Founded and lead NexBuildOn Community, driving its vision, strategy, technology initiatives, community growth, and national-level developer ecosystem. <strong>(Present)</strong></td>
-  </tr>
-  <tr>
     <td>🏆 <strong>Technical Team Lead</strong></td>
     <td>Previously served as Technical Team Lead at OSCode SaIT Chapter, leading technical development, website maintenance, digital platforms, and technical execution of projects, hackathons, tech events, tech talks, and workshops. <strong>(June 2025 – June 2026)</strong></td>
+  </tr>
+  <tr>
+    <td>🥉 <strong>NEXORA Hackathon 2026</strong></td>
+    <td><strong>Third Place – Certificate of Achievement.</strong> Secured third place at the 36-hour National-Level NEXORA Hackathon – Empowering Sustainability through AI Innovation, held on April 24–25, 2026, at HKBK College of Engineering, Bengaluru. Competed against 70+ teams and 280+ participants from multiple colleges across Bengaluru and Tamil Nadu.</td>
   </tr>
   <tr>
     <td>🏆 <strong>Cardano Asia 2025 Hackathon</strong></td>
